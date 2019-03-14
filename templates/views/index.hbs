@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>
+		Weather
+	</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<div class="main-content">
+		{{>header}}
+	</div>
+	<form class="weather-form">
+		<input type="text" class="search-location" placeholder="Enter a location">
+		<input type="submit">
+	</form>
+
+	<p id="loading-message"></p>
+	<p id="error-message"></p>
+	<p id="location-message"></p>
+	<p id="weather-message"></p>
+	{{>footer}}
+	<script src="/js/custom.js"></script>
+</body>
+</html>
