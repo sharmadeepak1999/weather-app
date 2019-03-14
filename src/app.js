@@ -32,7 +32,7 @@ app.get("/help", (req, res) => {
 })
 
 app.get("/about", (req, res) => {
-	res.render("help", {
+	res.render("about", {
 		title: "About",
 		name: "Deepak Sharma"
 	})
@@ -51,7 +51,6 @@ app.get("/weather", (req, res) => {
 				error
 			})
 		}
-		console.log(error);
 		forecast(latitude, longitude, (error, { summary, temperature, rainProbability } = {}) => {
 			if(error){
 				return res.send({
