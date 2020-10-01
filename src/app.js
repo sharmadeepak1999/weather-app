@@ -82,5 +82,6 @@ app.get("*", (req, res) => {
 })
 
 app.listen(port, () => {
-	console.log("Server started at pot 3000")
+	console.log(`Server started at port ${port}`)
+	console.log(`Local At: http://localhost:${port}`)
 })
